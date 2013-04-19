@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>jQuery 浮云相册、相册展示插件</title>
+
+<link href="images/main.css" rel="stylesheet" media="screen" />
+<script type="text/javascript" src="js/jQuery.js"></script>
+<script type="text/javascript" src="js/lgm.albums.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#listSingle li , #listBig li,#listSmall li').synchroMove({speed:'slow',complete:completeDo}) ;
+});
+</script>
+
+<script type="text/javascript" src="highslide/highslide.js"></script>
+<link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
+<script type="text/javascript">
+hs.graphicsDir = 'highslide/graphics/';
+hs.wrapperClassName = 'wide-border';
+hs.fadeInOut = true;
+function completeDo(){
+	$('#listSingle a , #listBig a,#listSmall a').click(function(){
+		hs.expand(this);
+		return false;
+	});
+};
+
+</script>
+	
+</head>
+<body>
+	<div class="pos">
+		<div id="logo">
+			<a href="#" target="_blank" class="png"></a>		
+		</div>
+	</div>
+	<div class="pos">
+		<div class="contents">
+			<h1 class="png">jQuery 浮云相册展示插件<span>(jQuery Clouds Albums Plus)</span></h1>
+		  <div class="content">
+			<div id="listSingle" class="listImg listSingle">
+				<h2><span class="png">单个图片效果</span></h2>
+				<ul>
+					 <li><a href="photo/ciqing.jpg"><img src="photo/ciqing.jpg" width="386" height="500" /></a></li>
+                <li><a href="photo/zuqiu.jpg"><img src="photo/zuqiu.jpg" width="492" height="627" /></a></li>             			
+				</ul>
+				 <div class="clear"></div>	
+			</div>
+			
+			<div id="listBig" class="listImg listBig">
+				<h2><span class="png">组图效果1</span></h2>
+				<ul>
+					 <li><a href="photo/1.jpg"><img src="photo/1.jpg" width="420" height="414" /></a></li>				
+					 <li><a href="photo/2.jpg"><img src="photo/2.jpg" width="480" height="300" /></a></li>
+                <li><a href="photo/3.jpg"><img src="photo/3.jpg" width="480" height="300" /></a></li>
+                <li><a href="photo/4.jpg"><img src="photo/4.jpg" width="400" height="300" /></a></li> 
+                <li><a href="photo/5.jpg"><img src="photo/5.jpg" width="450" height="347" /></a></li>
+                <li><a href="photo/10.jpg"><img src="photo/10.jpg" width="480" height="300" /></a></li>
+                <li><a href="photo/7.jpg"><img src="photo/7.jpg" width="480" height="300" /></a></li> 
+                <li><a href="photo/8.jpg"><img src="photo/8.jpg" width="450" height="328" /></a></li>
+                <li><a href="photo/6.jpg"><img src="photo/6.jpg" width="412" height="300" /></a></li>	
+					 <div class="clear"></div>				
+				</ul>
+			</div>
+			
+			<div id="listSmall" class="listImg listSmall">
+                <h2><span class="png">组图效果之二</span></h2>
+                <ul>
+                <li><a href="photo/1.jpg"><img src="photo/1.jpg" width="420" height="414" /></a></li>
+                <li><a href="photo/2.jpg"><img src="photo/2.jpg" width="412" height="300" /></a></li>
+                <li><a href="photo/3.jpg"><img src="photo/3.jpg" width="480" height="300" /></a></li>
+                <li><a href="photo/4.jpg"><img src="photo/4.jpg" width="400" height="300" /></a></li> 
+                <li><a href="photo/5.jpg"><img src="photo/5.jpg" alt="" width="450" height="347" /></a></li>                
+                <li><a href="photo/6.jpg"><img src="photo/6.jpg" width="480" height="300" /></a></li>
+                
+                <li><a href="photo/7.jpg"><img src="photo/7.jpg" width="480" height="300" /></a></li> 
+                <li><a href="photo/8.jpg"><img src="photo/8.jpg" width="463" height="300" /></a></li>
+                <li><a href="photo/9.jpg"><img src="photo/9.jpg" width="385" height="300" /></a></li>
+                <li><a href="photo/10.jpg"><img src="photo/10.jpg" width="480" height="300" /></a></li> 
+                <li><a href="photo/11.jpg"><img src="photo/11.jpg" width="468" height="300" /></a></li>                
+                <li><a href="photo/12.jpg"><img src="photo/12.jpg" width="480" height="300" /></a></li>
+                
+                <li><a href="photo/13.jpg"><img src="photo/13.jpg" width="381" height="250" /></a></li> 
+                <li><a href="photo/14.jpg"><img src="photo/14.jpg" width="480" height="300" /></a></li>
+                <li><a href="photo/15.jpg"><img src="photo/15.jpg" width="375" height="300" /></a></li>
+                <li><a href="photo/16.jpg"><img src="photo/16.jpg" width="480" height="300" /></a></li>
+                <li><a href="photo/17.jpg"><img src="photo/17.jpg" width="480" height="300" /></a></li>                
+                <li><a href="photo/6.jpg"><img src="photo/6.jpg" width="412" height="300" /></a></li>
+                
+                <li><a href="photo/5.jpg"><img src="photo/5.jpg" width="450" height="347" /></a></li>
+                <li><a href="photo/6.jpg"><img src="photo/6.jpg" width="412" height="300" /></a></li>
+                <li><a href="photo/7.jpg"><img src="photo/7.jpg" width="480" height="300" /></a></li> 
+                <li><a href="photo/8.jpg"><img src="photo/8.jpg" width="450" height="328" /></a></li>
+                <li><a href="photo/9.jpg"><img src="photo/9.jpg" width="385" height="300" /></a></li>
+                <li><a href="photo/10.jpg"><img src="photo/10.jpg" width="480" height="300" /></a></li>
+                <div class="clear"></div>
+                </ul>
+          </div><!-- .listSmall -->
+            
+            <div class="bottom">
+            	<div class="copyRight">
+            			<p>Copyright &copy; 2006 - <?php echo date('Y',time());?> <a href="#" target="_blank">lgm.Com</a></p>
+            	</div>
+            </div>
+          </div><!--content-->  
+		</div><!--contents-->  
+		
+		<div class="sliderBar">
+			
+		</div>
+		
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery 浮云相册、相册展示插件</title>
+
+<meta name="keywords" content="jQuery 浮云相册插件/相册展示,js浮云相册插件/相册展示,jQuery Clouds Albums Plus" />
+<meta name="description" content="jQuery 浮云相册插件/相册展示,js浮云相册插件/相册展示,jQuery Clouds Albums Plus" />
+<meta name="Language" content="zh-CN" />
+<meta name="Copyright" content="julying.com" />
+<meta name="Designer" content="julying.com" />
+<meta name="Publisher" content="王子墨,前端攻城师" />
+<meta name="Distribution" content="Global" />
+<meta name="author" content="lgm" />
+<meta name="robots" content="index,follow" />
+<meta name="googlebot" content="index,follow,archive" />
+
+<link href="../images/main.css" rel="stylesheet" media="screen" />
+<script type="text/javascript" src="jQuery.js"></script>
+<script type="text/javascript" src="lgm.albums.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#listSingle li , #listBig li,#listSmall li').synchroMove({speed:'slow',complete:completeDo}) ;
+});
+</script>
+
+<script type="text/javascript" src="highslide/highslide.js"></script>
+<link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
+<script type="text/javascript">
+hs.graphicsDir = 'highslide/graphics/';
+hs.wrapperClassName = 'wide-border';
+hs.fadeInOut = true;
+function completeDo(){
+	$('#listSingle a , #listBig a,#listSmall a').click(function(){
+		hs.expand(this);
+		return false;
+	});
+};
+
+</script>
+
+</head>
+<body>
+<div class="hide"><div class="example"></div><div class="code"></div></div>
+<div class="pos">
+	<div id="top" class="top">
+    	<div class="logo"><a href="http://julying.com" target="_blank" class="png">julying.com</a></div>
+    </div>
+</div>
+<div class="pos">
+
+	<div class="contents">
+    	<h1 class="png">jQuery 浮云相册展示插件 <span>(jQuery Clouds Albums Plus)</span></h1>
+        <div class="content">
+        	<div id="listSingle" class="listImg listSingle">
+                <h2><span class="png">单个图片效果</span></h2>
+                <ul>
+                <li><a href="photo/ciqing.jpg"><img src="photo/ciqing.jpg" width="386" height="500" /></a></li>
+                <li><a href="photo/zuqiu.jpg"><img src="photo/zuqiu.jpg" width="492" height="627" /></a></li>
+                </ul>
+                <div class="clear"></div>
+            </div><!-- .listSingle -->
+            
+            <div id="listBig" class="listImg listBig">
+                <h2><span class="png">组图效果之一</span></h2>                
+                <ul>
+                <li><a href="photo/1.jpg"><img src="photo/1.jpg" width="420" height="414" /></a></li>
+                <li><a href="photo/2.jpg"><img src="photo/2.jpg" width="480" height="300" /></a></li>
+                <li><a href="photo/3.jpg"><img src="photo/3.jpg" width="480" height="300" /></a></li>
+                <li><a href="photo/4.jpg"><img src="photo/4.jpg" width="400" height="300" /></a></li> 
+                <li><a href="photo/5.jpg"><img src="photo/5.jpg" width="450" height="347" /></a></li>
+                <li><a href="photo/10.jpg"><img src="photo/10.jpg" width="480" height="300" /></a></li>
+                <li><a href="photo/7.jpg"><img src="photo/7.jpg" width="480" height="300" /></a></li> 
+                <li><a href="photo/8.jpg"><img src="photo/8.jpg" width="450" height="328" /></a></li>
+                <li><a href="photo/6.jpg"><img src="photo/6.jpg" width="412" height="300" /></a></li>
+                <div class="clear"></div>
+                </ul>
+                
+            </div><!-- .listBig-->
+            
+            <div id="listSmall" class="listImg listSmall">
+                <h2><span class="png">组图效果之二</span></h2>
+                <ul>
+                <li><a href="photo/1.jpg"><img src="photo/1.jpg" width="420" height="414" /></a></li>
+                <li><a href="photo/2.jpg"><img src="photo/2.jpg" width="412" height="300" /></a></li>
+                <li><a href="photo/3.jpg"><img src="photo/3.jpg" width="480" height="300" /></a></li>
+                <li><a href="photo/4.jpg"><img src="photo/4.jpg" width="400" height="300" /></a></li> 
+                <li><a href="photo/5.jpg"><img src="photo/5.jpg" alt="" width="450" height="347" /></a></li>                
+                <li><a href="photo/6.jpg"><img src="photo/6.jpg" width="480" height="300" /></a></li>
+                
+                <li><a href="photo/7.jpg"><img src="photo/7.jpg" width="480" height="300" /></a></li> 
+                <li><a href="photo/8.jpg"><img src="photo/8.jpg" width="463" height="300" /></a></li>
+                <li><a href="photo/9.jpg"><img src="photo/9.jpg" width="385" height="300" /></a></li>
+                <li><a href="photo/10.jpg"><img src="photo/10.jpg" width="480" height="300" /></a></li> 
+                <li><a href="photo/11.jpg"><img src="photo/11.jpg" width="468" height="300" /></a></li>                
+                <li><a href="photo/12.jpg"><img src="photo/12.jpg" width="480" height="300" /></a></li>
+                
+                <li><a href="photo/13.jpg"><img src="photo/13.jpg" width="381" height="250" /></a></li> 
+                <li><a href="photo/14.jpg"><img src="photo/14.jpg" width="480" height="300" /></a></li>
+                <li><a href="photo/15.jpg"><img src="photo/15.jpg" width="375" height="300" /></a></li>
+                <li><a href="photo/16.jpg"><img src="photo/16.jpg" width="480" height="300" /></a></li>
+                <li><a href="photo/17.jpg"><img src="photo/17.jpg" width="480" height="300" /></a></li>                
+                <li><a href="photo/6.jpg"><img src="photo/6.jpg" width="412" height="300" /></a></li>
+                
+                <li><a href="photo/5.jpg"><img src="photo/5.jpg" width="450" height="347" /></a></li>
+                <li><a href="photo/6.jpg"><img src="photo/6.jpg" width="412" height="300" /></a></li>
+                <li><a href="photo/7.jpg"><img src="photo/7.jpg" width="480" height="300" /></a></li> 
+                <li><a href="photo/8.jpg"><img src="photo/8.jpg" width="450" height="328" /></a></li>
+                <li><a href="photo/9.jpg"><img src="photo/9.jpg" width="385" height="300" /></a></li>
+                <li><a href="photo/10.jpg"><img src="photo/10.jpg" width="480" height="300" /></a></li>
+                <div class="clear"></div>
+                </ul>
+            </div><!-- .listSmall -->
+            
+            
+            <div class="bottom">
+            	<div class="copyRight">
+                	<p>Copyright &copy; 2006 - <?php echo date('Y',time());?> <a href="http://Julying.Com" target="_blank">Julying.Com</a></p>
+                </div>
+                <h6 class="png"></h6>
+            </div><!-- .bottom -->
+        </div><!-- .content -->
+    </div><!-- .contents -->
+    <div class="sliderBar">
+    	<div id="about" class="about png">
+        	<div class="stickers png"></div>
+        	<h2>相册展示脚本</h2><h3 class="png">About</h3>
+            <p>
+            	<span>这是一个开源的、基于jQuery 函数库的 JavaScript 图片展示脚本插件。 代码语法完全符合W3C网页标准，完全兼容各种主流浏览器。<br>本插件主要用于图片的展示, 可以扩展为相册.</span>
+            </p>
+        	<div class="box">
+            	<h4>浏览器兼容：</h4>
+                <ul>Internet Explorer 6 /7 /8 /9<br /> Firefox 2 /3 /4<br />Opera 9 /10 /11<br />Apple Safari<br />Google Chrome<br />Others...</ul>
+            	
+                <h4>版权申明：</h4>
+                <ul>本插件遵循MIT License和GPL License.</ul>
+                <ul>(jQuery Albums Plus Plugin by julying.com is licensed under the MIT License and the GPL License.)</ul>
+            	<h4>被授权人权利：</h4>
+                <ul>被授权人有权利使用、复制、修改、合并、出版发行、散布、再授权及贩售软件及软件的副本。</ul>
+            	<h4>被授权人义务：</h4>
+                <ul>在软件和软件的所有副本中都必须包含版权声明和许可声明。</ul>
+                
+            </div>
+            &nbsp;
+        </div><!-- #about -->
+        
+        <div class="download">
+        	<h2>帮助文档</h2>
+        	<ul class="charges">                	
+                <a class="all" href="http://julying.com/lab/albums">查看帮助文档（在线）</a>
+            </ul>
+        </div><!-- .download -->
+        
+        <div id="contact" class="contact">
+        	<div class="stickers"></div>
+        	<h2>联系我</h2>
+            
+            <div class="address png">
+                <ul>
+                <li>王子墨 、前端攻城师</li>
+                <li>25岁 、北京 、<span id="email" class="email"></span></li>
+                <li><a href="http://t.qq.com/julying" title="经常离经叛道，偶尔循规蹈矩，常带着坏笑的阳光宅男" target="_blank">http://t.qq.com/julying</a></li>            
+                <li>外表斯文、内心邪恶的伪程序员</li>
+                <li>2006 - <?php echo date('Y',time());?> |  &copy; Julying.com</li>
+                </ul>
+            </div>
+            <script type="text/javascript">
+            $('#email').html('i'+'<a>@</a>'+'julying'+'.'+'com');
+            </script>
+        </div><!-- #contact -->
+    	
+    
+    </div><!-- .sliderBar -->
+    <div class="clear"></div>
+
+
+</div>
+
+<noscript>请允许脚本</noscript>
+
+
+<!--[if IE 6]><script src="jslib/DD_belatedPNG.js"></script><script>DD_belatedPNG.fix('.png');</script><![endif]-->
+<div style="display:none"><script src='http://pw.cnzz.com/c.php?id=80685900&l=2' language='JavaScript' charset='gb2312'></script></div>
+
+
+</body>
+</html>
